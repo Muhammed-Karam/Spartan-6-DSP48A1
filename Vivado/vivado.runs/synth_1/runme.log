@@ -1,0 +1,573 @@
+
+*** Running vivado
+    with args -log DSP48A1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DSP48A1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source DSP48A1.tcl -notrace
+Command: synth_design -top DSP48A1 -part xc7a200tffg1156-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14700 
+WARNING: [Synth 8-2490] overwriting previous definition of module DSP48A1 [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1.v:1]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 368.508 ; gain = 110.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'DSP48A1' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1.v:1]
+	Parameter A0REG bound to: 0 - type: integer 
+	Parameter A1REG bound to: 1 - type: integer 
+	Parameter B0REG bound to: 0 - type: integer 
+	Parameter B1REG bound to: 1 - type: integer 
+	Parameter CREG bound to: 1 - type: integer 
+	Parameter DREG bound to: 1 - type: integer 
+	Parameter MREG bound to: 1 - type: integer 
+	Parameter PREG bound to: 1 - type: integer 
+	Parameter CARRYINREG bound to: 1 - type: integer 
+	Parameter CARRYOUTREG bound to: 1 - type: integer 
+	Parameter OPMODEREG bound to: 1 - type: integer 
+	Parameter CARRYINSEL bound to: OPMODE5 - type: string 
+	Parameter B_INPUT bound to: DIRECT - type: string 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6157] synthesizing module 'DFF' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+	Parameter WIDTH bound to: 18 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DFF' (1#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+	Parameter WIDTH bound to: 18 - type: integer 
+	Parameter INPUTS bound to: 2 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000010 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:14]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000011 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DFF__parameterized0' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+	Parameter WIDTH bound to: 48 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DFF__parameterized0' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized0' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+	Parameter WIDTH bound to: 48 - type: integer 
+	Parameter INPUTS bound to: 2 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000010 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:14]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000011 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized0' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DFF__parameterized1' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DFF__parameterized1' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized1' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter INPUTS bound to: 2 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000010 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:14]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000011 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized1' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DFF__parameterized2' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+	Parameter WIDTH bound to: 36 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DFF__parameterized2' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized2' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+	Parameter WIDTH bound to: 36 - type: integer 
+	Parameter INPUTS bound to: 2 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000010 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:14]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000011 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized2' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized3' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+	Parameter WIDTH bound to: 48 - type: integer 
+	Parameter INPUTS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized3' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX__parameterized4' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter INPUTS bound to: 2 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000010 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:14]
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000011 is unreachable [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'MUX__parameterized4' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/MUX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DFF__parameterized3' [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter RSTTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'DFF__parameterized3' (2#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DFF.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'DSP48A1' (3#1) [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1.v:1]
+WARNING: [Synth 8-3331] design MUX__parameterized4 has unconnected port in2[0]
+WARNING: [Synth 8-3331] design MUX__parameterized4 has unconnected port in3[0]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[47]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[46]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[45]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[44]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[43]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[42]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[41]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[40]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[39]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[38]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[37]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[36]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[35]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[34]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[33]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[32]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[31]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[30]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[29]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[28]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[27]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[26]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[25]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[24]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[23]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[22]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[21]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[20]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[19]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[18]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[17]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[16]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[15]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[14]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[13]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[12]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[11]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[10]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[9]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[8]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[7]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[6]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[5]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[4]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[3]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[2]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[1]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in2[0]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[47]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[46]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[45]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[44]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[43]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[42]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[41]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[40]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[39]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[38]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[37]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[36]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[35]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[34]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[33]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[32]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[31]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[30]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[29]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[28]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[27]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[26]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[25]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[24]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[23]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[22]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[21]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[20]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[19]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[18]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[17]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[16]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[15]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[14]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[13]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[12]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[11]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[10]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[9]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[8]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[7]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[6]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[5]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[4]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[3]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[2]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[1]
+WARNING: [Synth 8-3331] design MUX__parameterized0 has unconnected port in3[0]
+WARNING: [Synth 8-3331] design MUX__parameterized2 has unconnected port in2[35]
+WARNING: [Synth 8-3331] design MUX__parameterized2 has unconnected port in2[34]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 401.566 ; gain = 144.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 401.566 ; gain = 144.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 401.566 ; gain = 144.043
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tffg1156-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1_constrains.xdc]
+Finished Parsing XDC File [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1_constrains.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1_constrains.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DSP48A1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/DSP48A1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 821.512 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 821.512 ; gain = 563.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tffg1156-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 821.512 ; gain = 563.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 821.512 ; gain = 563.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1.v:145]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1.v:207]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 821.512 ; gain = 563.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               36 Bit    Registers := 1     
+	               18 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 3     
+	   4 Input     48 Bit        Muxes := 2     
+	   2 Input     36 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DSP48A1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     49 Bit       Adders := 1     
+	   3 Input     49 Bit       Adders := 1     
+	   3 Input     18 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     49 Bit        Muxes := 1     
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+Module DFF__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
+Module MUX__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+Module DFF__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module MUX__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module DFF__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+Module MUX__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 1     
+Module MUX__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     48 Bit        Muxes := 1     
+Module MUX__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module DFF__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP mult_out, operation Mode is: C+A*B.
+DSP Report: operator mult_out is absorbed into DSP mult_out.
+DSP Report: operator mult_out is absorbed into DSP mult_out.
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[0]' (FDRE) to 'a1_reg/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[1]' (FDRE) to 'a1_reg/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[2]' (FDRE) to 'a1_reg/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[3]' (FDRE) to 'a1_reg/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[4]' (FDRE) to 'a1_reg/Q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[5]' (FDRE) to 'a1_reg/Q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[6]' (FDRE) to 'a1_reg/Q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[7]' (FDRE) to 'a1_reg/Q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[8]' (FDRE) to 'a1_reg/Q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[9]' (FDRE) to 'a1_reg/Q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[10]' (FDRE) to 'a1_reg/Q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[11]' (FDRE) to 'a1_reg/Q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[12]' (FDRE) to 'a1_reg/Q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[13]' (FDRE) to 'a1_reg/Q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[14]' (FDRE) to 'a1_reg/Q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[15]' (FDRE) to 'a1_reg/Q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[16]' (FDRE) to 'a1_reg/Q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'a0_reg/Q_reg[17]' (FDRE) to 'a1_reg/Q_reg[17]'
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[17]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[16]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[15]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[14]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[13]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[12]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[11]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[10]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[9]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[8]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[7]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[6]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[5]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[4]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[3]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[2]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[1]) is unused and will be removed from module DSP48A1.
+WARNING: [Synth 8-3332] Sequential element (b0_reg/Q_reg[0]) is unused and will be removed from module DSP48A1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 821.512 ; gain = 563.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|DSP48A1     | C+A*B       | 18     | 17     | 35     | -      | 36     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 851.820 ; gain = 594.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5842] Cannot pack DSP OPMODE registers because of constant '1' value. Packing the registers will cause simulation mismatch at initial cycle [E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/DSP48A1.v:151]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    31|
+|3     |DSP48E1_1 |     1|
+|4     |LUT1      |     1|
+|5     |LUT3      |    35|
+|6     |LUT4      |    59|
+|7     |LUT5      |   145|
+|8     |LUT6      |    37|
+|9     |FDRE      |   160|
+|10    |IBUF      |   175|
+|11    |OBUF      |   152|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+----------------------+------+
+|      |Instance       |Module                |Cells |
++------+---------------+----------------------+------+
+|1     |top            |                      |   797|
+|2     |  a1_reg       |DFF                   |    18|
+|3     |  b1_reg       |DFF_0                 |    18|
+|4     |  c_reg        |DFF__parameterized0   |    48|
+|5     |  carryin_reg  |DFF__parameterized3   |     2|
+|6     |  carryout_reg |DFF__parameterized3_1 |     1|
+|7     |  d_reg        |DFF_2                 |    23|
+|8     |  opmode_reg   |DFF__parameterized1   |   309|
+|9     |  p_reg        |DFF__parameterized0_3 |    48|
++------+---------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 904.512 ; gain = 646.988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 36 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 904.512 ; gain = 227.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 904.512 ; gain = 646.988
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 207 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 904.512 ; gain = 660.020
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/vivado/vivado.runs/synth_1/DSP48A1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file DSP48A1_utilization_synth.rpt -pb DSP48A1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 904.512 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 29 23:39:14 2025...
