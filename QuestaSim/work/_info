@@ -1,0 +1,123 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/2025 Courses/Digital_Diploma/Digital_Design_Labs/Lab 05/Q2
+T_opt
+!s110 1753888414
+V08]HLO7^UK1nS[4AFz=5=2
+04 10 4 work DSP48A1_tb fast 0
+=1-c8d9d297c499-688a369d-380-2528
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vDFF
+Z2 !s110 1753888413
+!i10b 1
+!s100 DTPCYUG1aK3aETdAP=A1g2
+IYn>AjT?K=LIXbNfBVcf7_0
+Z3 dE:/2025 Courses/Digital_Diploma/Digital_Design_Projects/Project_1/DSP48A1
+w1753836017
+8DFF.v
+FDFF.v
+!i122 58
+L0 1 25
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1753888413.000000
+!s107 DFF.v|
+!s90 -reportprogress|300|DFF.v|
+!i113 0
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@d@f@f
+vDSP48A1
+R2
+!i10b 1
+!s100 =cM[^O;_gJCYiofco4AF33
+Im:_mBhl3m0K^da`Y=AeCK1
+R3
+w1753752556
+8DSP48A1.v
+FDSP48A1.v
+!i122 60
+L0 1 238
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 DSP48A1.v|
+!s90 -reportprogress|300|DSP48A1.v|
+!i113 0
+R7
+R1
+n@d@s@p48@a1
+vDSP48A1_tb
+R2
+!i10b 1
+!s100 ZVDV>YC3;mo;9n?g4oA<F3
+IjLFJncBRUPPMiS3Og11E_0
+R3
+w1753817151
+8DSP48A1_tb.v
+FDSP48A1_tb.v
+!i122 61
+L0 1 158
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 DSP48A1_tb.v|
+!s90 -reportprogress|300|DSP48A1_tb.v|
+!i113 0
+R7
+R1
+n@d@s@p48@a1_tb
+vMUX
+R2
+!i10b 1
+!s100 O48cl:jGHA3aHSNe=KezH3
+Ic6A>KDLJj1PH3nHhGS<cT1
+R3
+w1753733426
+8MUX.v
+FMUX.v
+!i122 59
+L0 1 18
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 MUX.v|
+!s90 -reportprogress|300|MUX.v|
+!i113 0
+R7
+R1
+n@m@u@x
